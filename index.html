@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas de Motos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .brand-section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 15px;
+        }
+        .brand-header img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+        .brand-header h2 {
+            font-size: 32px;
+            color: #333;
+        }
+        .brand-history {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #333;
+            line-height: 1.6;
+            color: #555;
+        }
+        .motorcycles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .motorcycle-card {
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            background: #fff;
+        }
+        .motorcycle-card:hover {
+            transform: translateY(-5px);
+        }
+        .motorcycle-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .motorcycle-card p {
+            padding: 12px;
+            background: #f9f9f9;
+            font-weight: bold;
+            color: #333;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+<div class="brand-section">
+    <div class="brand-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/1200px-Honda_Logo.svg.png" alt="Honda Logo">
+        <h2>Honda</h2>
+    </div>
+    <div class="brand-history">
+        <p>Fundada em 1949 por Soichiro Honda, a Honda começou como fabricante de motores e se tornou um dos maiores fabricantes de motocicletas do mundo. Conhecida pela confiabilidade e inovação tecnológica.</p>
+    </div>
+    <div class="motorcycles-grid">
+        <div class="motorcycle-card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.Zsh92YoYVWjlOfs0AeUQCwHaFj?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="CB Hornet">
+            <p>CB750 Hornet</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.C_e5j5mzViLysI-HW0IvDgHaE8?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="CRF1100 Africa Twin">
+            <p>CRF1100 Africa Twin</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://maxbhp.com/wp-content/uploads/2024/11/2021-Honda-Gold-Wing-Tour-Automatic-DCT-First-Look-Touring-motorcycle.webp" alt="Gold Wing">
+            <p>Gold Wing</p>
+        </div>
+    </div>
+</div>
+
+<div class="brand-section">
+    <div class="brand-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Yamaha_Motor_Logo_%28full%29.svg/1200px-Yamaha_Motor_Logo_%28full%29.svg.png" alt="Yamaha Logo">
+        <h2>Yamaha</h2>
+    </div>
+    <div class="brand-history">
+        <p>Fundada em 1955, a Yamaha começou como subsidiária da Nippon Gakki. Pioneira em tecnologia de motores e design inovador, tornou-se referência em motocicletas esportivas e de performance.</p>
+    </div>
+    <div class="motorcycles-grid">
+        <div class="motorcycle-card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.VN4DHV8rg0y_o1A-jn2sJAHaEK?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="YZF-R1">
+            <p>YZF-R1</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.NcG7DNFNjZBB5sEEC5WPMQHaE8?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="MT-09">
+            <p>MT-09</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://th.bing.com/th/id/R.87ab56e0030e5e89302b590ca8bf818f?rik=NXQvpvE4N9WK%2bw&riu=http%3a%2f%2fwww.mcnews.com.au%2fwp-content%2fuploads%2f2018%2f09%2f2019-Yamaha-Tracer-900GT-10.jpg&ehk=%2brsBo%2f6rLBNewXF0taNP%2bVHuK6A4FQt91kTZSh6yomY%3d&risl=&pid=ImgRaw&r=0" alt="Tracer 900">
+            <p>Tracer 900 GT</p>
+        </div>
+    </div>
+</div>
+
+<div class="brand-section">
+    <div class="brand-header">
+        <img src="https://logospng.org/download/suzuki/logo-suzuki-4096.png" alt="Suzuki Logo">
+        <h2>Suzuki</h2>
+    </div>
+    <div class="brand-history">
+        <p>Estabelecida em 1909, a Suzuki tem uma longa história na indústria de motocicletas. Conhecida por oferecer motocicletas acessíveis com bom desempenho e durabilidade, conquistou mercados globais.</p>
+    </div>
+    <div class="motorcycles-grid">
+        <div class="motorcycle-card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.EwweaY4zMyAkoP6tzTG0dAHaE8?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="GSX-R1000">
+            <p>GSX-R1000R</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://ultimatemotorcycling.com/wp-content/uploads/2019/08/2020-Suzuki-V-Strom-650XT-Adventure-First-Look-Fast-Facts-motorcycle.jpg" alt="V-Strom 650">
+            <p>V-Strom 650XT</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://www.carscoops.com/wp-content/uploads/2023/07/2024-Suzuki-Hayabusa-25th-Anniversary-Edition-7.jpg" alt="Hayabusa">
+            <p>Hayabusa</p>
+        </div>
+    </div>
+</div>
+
+<div class="brand-section">
+    <div class="brand-header">
+        <img src="https://logos-world.net/wp-content/uploads/2020/09/Kawasaki-Emblem.png" alt="Kawasaki Logo">
+        <h2>Kawasaki</h2>
+    </div>
+    <div class="brand-history">
+        <p>Fundada em 1896, a Kawasaki entrou no mercado de motocicletas em 1961. Reconhecida por criar máquinas poderosas e agressivas, a marca é sinônimo de performance e adrenalina.</p>
+    </div>
+    <div class="motorcycles-grid">
+        <div class="motorcycle-card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.XxfZwFExVraHQwn8ijSr1QHaHa?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ninja H2">
+            <p>Ninja H2R</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.C8fom9OM-jcm25j4KoYlXwHaFj?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Z900">
+            <p>Z900</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/23MY_Versys_1000_Grand_Tourer_GY2_Front.jpg" alt="Versys 1000">
+            <p>Versys 1000 GT</p>
+        </div>
+    </div>
+</div>
+
+<div class="brand-section">
+    <div class="brand-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/1200px-BMW.svg.png" alt="BMW Logo">
+        <h2>BMW</h2>
+    </div>
+    <div class="brand-history">
+        <p>A BMW começou a produzir motocicletas em 1923 e tornou-se conhecida pela engenharia alemã de precisão. Suas motos são admiradas pela confiabilidade, conforto e capacidade de viagem de longa distância.</p>
+    </div>
+    <div class="motorcycles-grid">
+        <div class="motorcycle-card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.kVLH_duQVwRVoou9NMYU2QHaE8?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="S1000RR">
+            <p>S1000RR</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://cdn.autopapo.com.br/box/uploads/2024/07/08113518/bmw-r-1300-gs-adventure-1.jpg" alt="R1250 GS">
+            <p>R1300 GS</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.3ybiRrqWFdQeWspkNnKoKQHaEK?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="F850 GS">
+            <p>F850 GS</p>
+        </div>
+    </div>
+</div>
+
+<div class="brand-section">
+    <div class="brand-header">
+        <img src="https://logos-world.net/wp-content/uploads/2021/03/Ducati-Symbol.png" alt="Ducati Logo">
+        <h2>Ducati</h2>
+    </div>
+    <div class="brand-history">
+        <p>Fundada em 1926 na Itália, a Ducati é legendária por seu design italiano e desempenho excepcionais. Pioneira em tecnologia de motores desmodromicos, conquistou múltiplos campeonatos mundiais.</p>
+    </div>
+    <div class="motorcycles-grid">
+        <div class="motorcycle-card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.ddywngPmfvqWe9cQI_oBugHaE8?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Panigale V4">
+            <p>Panigale V4</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://th.bing.com/th/id/R.28f9f5e6dd276c391b3d180dc02b6113?rik=4xfTYwJJ9ZnudA&pid=ImgRaw&r=0" alt="Monster">
+            <p>Monster</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.z1KAK8u6ncaoPILeNmdwMAHaFj?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Multistrada">
+            <p>Multistrada V4</p>
+        </div>
+    </div>
+</div>
+
+<div class="brand-section">
+    <div class="brand-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Harley-Davidson_logo.svg/1200px-Harley-Davidson_logo.svg.png" alt="Harley-Davidson Logo">
+        <h2>Harley-Davidson</h2>
+    </div>
+    <div class="brand-history">
+        <p>Fundada em 1903, a Harley-Davidson é um ícone americano. Conhecida por seus motores V-twin únicos e estilo cruiser, representa liberdade e a cultura das estradas abertas.</p>
+    </div>
+    <div class="motorcycles-grid">
+        <div class="motorcycle-card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.mrfo-hnF3oGSK71WRgFmMAHaE8?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Street Glide">
+            <p>Street Glide</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Xq9LUVUY1MA-kLVaQUZbqwHaEK?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Street Bob">
+            <p>Street Bob 114</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://ultimatemotorcycling.com/wp-content/uploads/2021/01/2021-Harley-Davidson-Road-King-Special-First-Look-urban-cruiser-touring-motorcycle-11.jpg" alt="Road King">
+            <p>Road King Special</p>
+        </div>
+    </div>
+</div>
+
+<div class="brand-section">
+    <div class="brand-header">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.xvkJCFyDE--5MBwboUjyXgHaE0?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bajaj Logo">
+        <h2>Bajaj</h2>
+    </div>
+    <div class="brand-history">
+        <p>Fundada em 1926 na Índia, a Bajaj é um dos maiores fabricantes de motocicletas do mundo. Especializada em motocicletas acessíveis e eficientes, domina os mercados emergentes.</p>
+    </div>
+    <div class="motorcycles-grid">
+        <div class="motorcycle-card">
+            <img src="https://img.indianautosblog.com/2020/10/19/bajaj-pulsar-ns200-pewter-grey-3c64.jpg" alt="Pulsar NS200">
+            <p>Pulsar NS200</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://www.motonline.com.br/noticia/wp-content/uploads/2022/12/Bajaj-Dominar-400-3.jpg" alt="Dominar 400">
+            <p>Dominar 400</p>
+        </div>
+        <div class="motorcycle-card">
+            <img src="https://cdn.motor1.com/images/mgl/AkKyAV/s1/bajaj-introduces-the-dominar-160-and-200-in-brazil.jpg" alt="Dominar 160 (Representativa)">
+            <p>Dominar 160 </p>
+        </div>
+        <section id = "Regiões e contato das concessionárias">
+            <h2>Regiões e Contato das Concessionárias</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Região</th>
+                        <br>
+                        <th>Contato</th>
+                        <br>
+                        <th>Marca</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td><a href="https://www.honda.com.br/concessionarias">Honda São Paulo</a></td>
+                        <td>Honda</td>
+
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td><a href="https://www.yamaha-motor.com.br/concessionarias">Yamaha Rio de Janeiro</a></td>
+                        <td>Yamaha</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td><a href="https://www.suzuki.com.br/concessionarias">Suzuki Minas Gerais</a></td>
+                        <td>Suzuki</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td><a href="https://www.kawasaki.com.br/concessionarias">Kawasaki Paraná</a></td>
+                        <td>Kawasaki</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul</td>
+                        <td><a href="https://www.bmw-motorrad.com.br/concessionarias">BMW Rio Grande do Sul</a></td>
+                        <td>BMW</td>
+                    </tr>
+                    <tr>
+                        <td>Santa Catarina</td>
+                        <td><a href="https://www.ducati.com/br/pt/concessionarias">Ducati Santa Catarina</a></td>
+                        <td>Ducati</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td><a href="https://www.harley-davidson.com/br/pt/concessionarias">Harley-Davidson Bahia</a></td>
+                        <td>Harley-Davidson</td>
+                    </tr>
+                    <tr>
+                        <td>Pernambuco</td>
+                        <td><a href="https://www.newvia.com.br/pernambuco/">Bajaj Pernambuco</a></td>
+                        <td>Bajaj</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+
+
+
+
+
+        </section>
+
+    </div>
+    <p style="text-align: center; margin: 40px 0; font-size: 18px; color: #333;">Gostou das motos? Deixe seu contato para saber mais!</p>
+<form action="">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <label for = "numero">Número:</label>
+    <input type="text" id="numero" name="numero">
+    <label for="marcas preferida">Marcas Preferidas:</label>
+    <select id="marcas-preferidas" name="marcas-preferidas">
+        <option value="yamaha">Yamaha</option>
+        <option value="honda">Honda</option>
+        <option value="ducati">Ducati</option>
+        <option value="harley-davidson">Harley-Davidson</option>
+        <option value="bajaj">Bajaj</option>
+    </select>
+    <br>
+    <label for="interesse">Interesse em Test Ride:</label>
+    <textarea id="interesse" name="interesse" rows="4" cols="50" placeholder="Deixe aqui suas dúvidas ou comentários..."></textarea>
+    <br>
+    <input type="checkbox" name="Interesse" id="interesse-checkbox">
+    <label for="interesse-checkbox">Aceito receber informações sobre test rides</label>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+</div>
+
+
+</body>
+</html>
